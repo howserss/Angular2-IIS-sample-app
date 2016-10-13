@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {KeyEventsPlugin} from '@angular/platform-browser/src/dom/events/key_events';
+
 
 @Component({
   selector: 'app-home',
@@ -18,18 +18,6 @@ account_id:string;
     //alert(this.id);
   }
 
-onKeyDown(event: any ): void { 
-    this.lastKey = KeyEventsPlugin.getEventFullKey(event); 
-    alert(this.lastKey);
-     event.preventDefault(); 
-   } 
-
-
-  onShiftEnter(event: any): void { 
-    alert("test");
-    //this.shiftEnter = true;     
-    event.preventDefault(); 
-  } 
 
 
 }
