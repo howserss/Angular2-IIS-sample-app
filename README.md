@@ -2,6 +2,15 @@
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.16.
 
+This was tested in IIS7.5 and with ng serve using Chrome and IE11.
+
+## WEB SERVER STUFF
+(ng serve) http://localhost:4200/#/home/5 (the 5 is just a parameter of the route)
+
+(IIS) with a virtual called noteapp http://localhost/noteapp/#/home/5.
+The virtual which points to dist (generated with ng build) is named noteapp.  You could call it anyhting you like (no dependency on name).
+
+
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
